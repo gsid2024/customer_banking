@@ -1,6 +1,6 @@
 """Import the Account class from the Account.py file."""
-# ADD YOUR CODE HERE
-
+# ADD YOUR CODE HERE - hw step 1
+from Account import Account
 # Define a function for the Savings Account
 def create_savings_account(balance, interest_rate, months):
     """Creates a savings account, calculates interest earned, and updates the account balance.
@@ -16,19 +16,25 @@ def create_savings_account(balance, interest_rate, months):
     """
     # Create an instance of the `Account` class and pass in the balance and interest parameters.
     #  Hint: You need to add the interest as a value, i.e, 0.
-    # ADD YOUR CODE HERE
+    # ADD YOUR CODE HERE - hw step 2
+    account = Account(balance, 0)
 
     # Calculate interest earned
-     # ADD YOUR CODE HERE
+     # ADD YOUR CODE HERE - hw step 3
+    annual_interest_rate = interest_rate / 100
+    interest_earned = balance * annual_interest_rate * (months / 12)
 
     # Update the savings account balance by adding the interest earned
-    # ADD YOUR CODE HERE
+    # ADD YOUR CODE HERE - hw step 4
+    updated_balance = balance + interest_earned
 
     # Pass the updated_balance to the set balance method using the instance of the SavingsAccount class.
-    # ADD YOUR CODE HERE
+    # ADD YOUR CODE HERE - hw step 5
+    account.set_balance(updated_balance)
+    account.set_interest(interest_earned)
 
     # Pass the interest_earned to the set interest method using the instance of the SavingsAccount class.
-    # ADD YOUR CODE HERE
-
-    # Return the updated balance and interest earned.
-    return  # ADD YOUR CODE HERE
+    # ADD YOUR CODE HERE - hw step 6
+        # Return the updated balance and interest earned.
+    return updated_balance, interest_earned
+     # ADD YOUR CODE HERE - hw step 7
