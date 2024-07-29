@@ -7,6 +7,8 @@ Account.py: This file has the Account class. It helps keep track of the accountâ
 savings_account.py: This has the create_savings_account function. It figures out how much interest you earn and updates the savings account balance.
 cd_account.py: This file includes the create_cd_account function. It works the same way as the savings function but for CD accounts.
 customer_banking.py: This is the main script. It talks to the user, gets their account details, and shows the results.
+
+
 How It Works
 Account.py
 __init__(balance, interest): Sets up a new account with a starting balance and interest.
@@ -24,6 +26,7 @@ Makes a new CD account.
 Calculates interest just like the savings account.
 Updates the balance and returns the new balance and interest earned.
 customer_banking.py
+
 How to Run It:
 Just run this file: python customer_banking.py
 It will ask for details about your savings and CD accounts.
